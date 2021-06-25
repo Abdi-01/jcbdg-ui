@@ -6,6 +6,7 @@ import LandingPage from "./pages/landingPage";
 import NavbarComp from "./components/navbarComp";
 import FooterComp from './components/footerComp';
 import ProductPage from "./pages/productPage";
+import authPage from "./pages/authPage";
 
 class App extends Component {
   constructor(props) {
@@ -19,6 +20,7 @@ class App extends Component {
         <Switch>
           <Route path="/" component={LandingPage} exact />
           <Route path="/product" component={ProductPage} exact />
+          <Route path="/auth" component={authPage} />
         </Switch>
         <FooterComp />
       </div>
