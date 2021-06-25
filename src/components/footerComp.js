@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 
 class FooterComp extends React.Component {
     constructor(props) {
@@ -7,18 +8,77 @@ class FooterComp extends React.Component {
     }
     render() {
         return (
-            <div style={{ display: 'flex', backgroundColor: 'grey' }}>
-                <div>
-                    <h6>Facebook</h6>
+            <div>
+                <div style={{ display: 'flex', flexWrap: 'wrap', height: 'auto', justifyContent: 'space-around', alignItems: 'center', backgroundColor: 'rgba(230, 142, 195, 0.3)' }}>
+                    <div className="container row col-12">
+                        <div className="col-md-4">
+                            <h6>INFO CONTACT</h6>
+                            <div style={{ display: 'flex' }}>
+                                <div>
+                                    Alamat:
+                                </div>
+                                <div className="mx-3">
+                                    Ruko Puri Dago no. A3
+                                    Jl. Terusan Jakarta, Antapani, Bandung 40293
+                                    <p>
+                                        Jawa Barat - Indonesia
+                                    </p>
+                                </div>
+                            </div>
+                            <div style={{ display: 'flex' }}>
+                                <div>
+                                    Phone:
+                                </div>
+                                <div className="mx-3">021-1234-5678</div>
+                            </div>
+                            <div style={{ display: 'flex' }}>
+                                <div>
+                                    Email:
+                                </div>
+                                <div className="mx-3">Support by JCWM BDG</div>
+                            </div>
+                        </div>
+                        <div className="col-md-4">
+                            <h6>INFORMASI</h6>
+                            <ul>
+                                <li>Tentang Kami</li>
+                                <li>Syarat Penggunaan</li>
+                                <li>Ketentuan Privasi</li>
+                                <li>Kontak kami</li>
+                            </ul>
+                        </div>
+                        <div className="col-md-4">
+                            <h6>DOWNLOAD APP</h6>
+                            <div>
+                                <img src='https://www.sicepat.com/static/img/playstore@2x.png' width='120px' />
+                            </div>
+                            <div className="my-2">
+                                <img src='https://www.sicepat.com/static/img/appstore@2x.png' width='120px' />
+                            </div>
+                            <div>
+                                <p>Media Social :</p>
+                                <Link className="nav-item facebook">
+                                    <span><img src="https://img.pngio.com/facebook-icon-facebook-facebook-logo-social-media-icon-png-and-facebook-icon-png-transparent-background-640_640.png" width="40px" /></span>
+                                </Link>
+                                <Link className="nav-item instagram mx-2">
+                                    <span><img src="https://image.flaticon.com/icons/png/512/174/174855.png" width="28px" /></span>
+                                </Link>
+                                <Link className="nav-item twitter mx-1">
+                                    <span><img src="https://cdn.iconscout.com/icon/free/png-256/twitter-213-569318.png" width="40px" /></span>
+                                </Link>
+                                <Link className="nav-item youtube mx-1">
+                                    <span><img src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_youtube-512.png" width="30px" /></span>
+                                </Link>
+                                <Link className="nav-item pinterest mx-1">
+                                    <span><img src="https://i.pinimg.com/originals/d3/d1/75/d3d175e560ae133f1ed5cd4ec173751a.png" width="40px" /></span>
+                                </Link>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <h6>Latest Tweet</h6>
-                    <p>Here you can use rows and columns
-                    to organize your footer content. 
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                </div>
-                <div>
-                    <h6>Our Company</h6>
+                <div className='container'>
+                    <hr style={{ marginTop: '1vh' }}></hr>
+                    <p className="col-6" style={{ fontSize: '13px' }}><b>© 2021 Hijab.id - All rights reserved.</b></p>
                 </div>
             </div>
         );
