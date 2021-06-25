@@ -4,6 +4,7 @@ import "./App.css";
 import { Switch, Route } from "react-router-dom";
 import LandingPage from "./pages/landingPage";
 import NavbarComp from "./components/navbarComp";
+import FooterComp from './components/footerComp';
 
 class App extends Component {
   constructor(props) {
@@ -17,6 +18,7 @@ class App extends Component {
         <Switch>
           <Route path="/" component={LandingPage} exact />
         </Switch>
+        <FooterComp />
       </div>
     );
   }
