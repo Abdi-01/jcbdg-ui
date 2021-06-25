@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import CarouselComp from '../components/carouselComp';
 
 class LandingPage extends Component {
     constructor(props) {
@@ -9,6 +10,7 @@ class LandingPage extends Component {
         return ( 
             <div>
                 <h1>Landing Page</h1>
+                <CarouselComp />
             </div>
          );
     }
